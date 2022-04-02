@@ -27,8 +27,12 @@ while True:
 
     for j in range(5):
         vel[j] = (abs(d[j+1] - d[j]))/0.05
-        print("vel " + str(j) + " " + str(vel[j]))
+        #print("vel " + str(j) + " " + str(vel[j]))
     velocity = sum(vel)/4.0
+
+    #do scaling
+    velocity = velocity/10.0
+
 
     f = open("distance_velocity.txt", "w")
     f.write(str(dist) + ";\n" + str(velocity) + ";\n")
