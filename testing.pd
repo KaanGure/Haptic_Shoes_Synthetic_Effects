@@ -1,0 +1,50 @@
+#N canvas -8 -8 1920 1037 12;
+#X obj 707 221 expr inSnow;
+#X floatatom 703 264 5 0 0 0 - - -;
+#X obj 715 181 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 314 277 expr $f1 + inSnow;
+#X msg 304 232 1;
+#X obj 314 318 value inSnow;
+#X obj 592 307 expr inSnow == 2;
+#X obj 588 378 print;
+#X obj 451 214 expr inSnow > 1;
+#X obj 387 152 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 451 287 0;
+#X obj 437 350 value inSnow;
+#X obj 451 250 sel 1;
+#X obj 33 156 random 100;
+#X obj 102 246 / 100;
+#X obj 33 135 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 22 292 osc~;
+#X obj 104 350 vline~;
+#X floatatom 21 223 5 0 0 0 - - -;
+#X obj 36 464 dac~;
+#X obj 58 406 *~;
+#X floatatom 102 220 5 0 100 0 - - -;
+#X obj 104 188 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 103 312 \$1 83 \, 0 160 10;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 6 0 7 0;
+#X connect 8 0 12 0;
+#X connect 9 0 4 0;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 12 0 10 0;
+#X connect 14 0 23 0;
+#X connect 15 0 13 0;
+#X connect 16 0 20 0;
+#X connect 17 0 20 1;
+#X connect 18 0 16 0;
+#X connect 20 0 19 0;
+#X connect 20 0 19 1;
+#X connect 21 0 14 0;
+#X connect 22 0 21 0;
+#X connect 23 0 17 0;
