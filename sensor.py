@@ -6,24 +6,9 @@ import sys
 import struct
 import READ_VL6180
 import pub
-from pythonosc import osc_message_builder
-from pythonosc import udp_client
 
 # Create TOF sensor
 TOF = READ_VL6180.createTOF()
-
-
-# Create ZMQ socket
-[socket, publisher_id] = pub.connectSocket()
-
-
-# Connect udp client to bach
-client = udp_client.SimpleUDPClient("132.206.74.208", 14923)
-
-
-# Create tiles array to be send to simulation
-tiles = numpy.tile(0.0, 6*6*4)
-client.send_message("/niw/client", tiles)
 
 while True:
 
@@ -42,4 +27,4 @@ while True:
 
     # Broadcast actual value read from TOF to ZMQ platform
     #pub.sendTOFdata(socket, dist)
-    time.sleep(0.1)
+    time.sleep(0.01)
