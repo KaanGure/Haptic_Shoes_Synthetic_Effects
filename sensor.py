@@ -10,6 +10,8 @@ import pub
 # Create TOF sensor
 TOF = READ_VL6180.createTOF()
 i = 0
+d = [0.0 for i in range(6)]
+vel = [0.0 for i in range(5)]
 while True:
     if i > 5:
         i = 0
@@ -21,8 +23,6 @@ while True:
 
     #print(newDist)
     print(dist)
-    d = [0.0 for i in range(6)]
-    vel = [0.0 for i in range(5)]
     d[i] = float(dist)
 
     for j in range(5):
