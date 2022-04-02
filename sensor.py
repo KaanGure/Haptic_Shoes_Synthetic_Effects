@@ -26,7 +26,8 @@ while True:
     d[i] = float(dist)
 
     for j in range(4):
-        vel[j] = (d[j+1] - d[j])/0.05
+        vel[j] = (abs(d[j+1] - d[j]))/0.05
+        print("vel" + j + vel[j])
     velocity = sum(vel)/4.0
 
     f = open("distance_velocity.txt", "w")
