@@ -23,7 +23,7 @@ while True:
     print(dist)
     d = [0.0 for i in range(5)]
     vel = [0.0 for i in range(4)]
-    d[i] = dist
+    d[i] = float(dist)
 
     for j in range(4):
         vel[j] = (d[j+1] - d[j])/0.05
