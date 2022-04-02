@@ -25,7 +25,7 @@ while True:
     vel = [0.0 for i in range(5)]
     d[i] = float(dist)
 
-    for j in range(4):
+    for j in range(5):
         vel[j] = (abs(d[j+1] - d[j]))/0.05
         print("vel " + str(j) + " " + str(vel[j]))
     velocity = sum(vel)/4.0
