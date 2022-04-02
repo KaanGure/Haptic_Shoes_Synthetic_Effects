@@ -35,4 +35,5 @@ while True:
     f.close()
     f = open("distance_velocity.txt", "r")
     print(f.read())
+    i+= 1
     time.sleep(0.01)
