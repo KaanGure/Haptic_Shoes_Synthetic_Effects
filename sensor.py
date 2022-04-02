@@ -6,6 +6,12 @@ import sys
 import struct
 import READ_VL6180
 import pub
+import socket
+
+ip_send = "192.168.43.136"
+send_port = 14923
+
+sock_send = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Create TOF sensor
 TOF = READ_VL6180.createTOF()
@@ -40,4 +46,8 @@ while True:
     f = open("distance_velocity.txt", "r")
     print(f.read())
     i+= 1
-    time.sleep(0.1)
+
+    msg = (bytes(str(dist), 'utf8'))
+    sock_send.sendto(msg, (ip_send, send_port))
+
+    time.sleep(0.01)

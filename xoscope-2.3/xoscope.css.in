@@ -1,0 +1,101 @@
+*#top_grid {_black_bg}
+*#display_box {_black_bg}
+*#bottom_grid {_black_bg}
+*#databox {_black_bg}
+*#databox_aspectframe {_red}
+*#databox_hscrollbar {_red_scrollbar}
+*#databox_hscrollbar:hover {_red_scrollbar_prelight}
+*#databox_hscrollbar:active {_red_scrollbar_active}
+
+button.toggle {_black_bg}
+button.toggle:active {_grey_bg}
+button.toggle:checked {_dark_grey_bg}
+
+*#top_grid label {_label_font}
+*#bottom_grid label {_label_font}
+
+*#top_grid label {_white}
+*#display_box label {_white}
+*#bottom_grid label {_white}
+
+label#sample_rate_label {_green}
+label#samples_per_frame_label {_green}
+label#period_label {_green}
+label#min_max_label {_green}
+
+label#Ch1_label {_green}
+label#Ch1_scale_label {_green}
+label#Ch1_position_label {_green}
+label#Ch1_source_label {_green}
+
+label#Ch2_label {_cyan}
+label#Ch2_scale_label {_cyan}
+label#Ch2_position_label {_cyan}
+label#Ch2_source_label {_cyan}
+
+label#Ch3_label {_yellow}
+label#Ch3_scale_label {_yellow}
+label#Ch3_position_label {_yellow}
+label#Ch3_source_label {_yellow}
+
+label#Ch4_label {_orange}
+label#Ch4_scale_label {_orange}
+label#Ch4_position_label {_orange}
+label#Ch4_source_label {_orange}
+
+label#Ch5_label {_violet}
+label#Ch5_scale_label {_violet}
+label#Ch5_position_label {_violet}
+label#Ch5_source_label {_violet}
+
+label#Ch6_label {_blue}
+label#Ch6_scale_label {_blue}
+label#Ch6_position_label {_blue}
+label#Ch6_source_label {_blue}
+
+label#Ch7_label {_red}
+label#Ch7_scale_label {_red}
+label#Ch7_position_label {_red}
+label#Ch7_source_label {_red}
+
+label#Ch8_label {_white}
+label#Ch8_scale_label {_white}
+label#Ch8_position_label {_white}
+label#Ch8_source_label {_white}
+
+label#tab_help_label {_green}
+label#scale_help_label {_green}
+label#position_help_label {_green}
+label#signal_help_label {_green}
+label#memory_help_label {_green}
+label#store_help_label {_green}
+label#recall_help_label {_green}
+
+label#escape_key_label {_violet}
+label#enter_key_label {_violet}
+label#at_key_label {_violet}
+label#comma_key_label {_violet}
+label#pound_key_label {_violet}
+label#dash_key_label {_violet}
+label#plus_key_label {_violet}
+label#period_key_label {_violet}
+label#ampersand_key_label {_violet}
+label#asterisk_key_label {_violet}
+label#exclaim_key_label {_violet}
+label#space_key_label {_violet}
+label#tab_key_label {_violet}
+label#left_brace_key_label {_violet}
+label#right_brace_key_label {_violet}
+label#left_bracket_key_label {_violet}
+label#right_bracket_key_label {_violet}
+label#caret_key_label {_violet}
+label#9_key_label {_violet}
+label#0_key_label {_violet}
+label#left_paren_key_label {_violet}
+label#right_paren_key_label {_violet}
+label#registers_left_key_label {_violet}
+label#registers_right_key_label {_violet}
+label#signal_key_label {_violet}
+label#store_key_label {_violet}
+label#recall_key_label {_violet}
+
